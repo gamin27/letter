@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2020年賀状当選調査ツール</title>
+<meta name="description" content="2020年賀状の当選可否をバンっと出力するやつ。バグがあっても責任は問いません。(T-T)">
+<meta property="og:title" content="2020年賀状当選調査ツール">
+<meta property="og:type" content="website">
+<meta property="og:url" content="#">
+<meta property="og:image" content="サイトicon">
+<meta property="og:site_name" content="2020年賀状当選調査ツール">
+<meta property="og:description" content="2020年賀状の当選可否をバンっと出力するやつ。バグがあっても責任は問いません。">
+<meta name="format-detection" content="telephone=no">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="apple-touch-icon" href="apple用のアイコン画像">
+<link rel="shortcut icon" href="">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css?ver=1.4">
+</head>
+<body>
+
+<!--	header-->
+	<header class="gm-header">
+		<div class="gm-header-title">
+			<p class="gm-header-title__title">2020</p>
+		</div>
+		<div class="gm-header-subtitle">
+			お年玉付き年賀状<br class="br-sp">
+			当選番号を確認
+		</div>
+	</header>
+<!--	/header-->
+	
+<!--	main-->
+	<main>
+		<div class="wrapper">
+			<div class="mes">番号を入力してください。</div>
+			<form action="" name='mainForm'>
+				<table id="inputTable">
+					<thead></thead>
+					<tbody id="inputTableBody">
+						<tr class="table-block">
+							<td class="t-left">
+								<div class="text-box">
+									<input id="box0" name="box0" type="text" class="js_letterNumber">
+								</div>
+							</td>
+							<td class="t-right">
+								<p id="ans0">
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn-box">
+					<p id="addTextArea" class="add-text-area btn">
+						追加
+					</p>
+					<p id="gmOutput" class="output btn">
+						確認
+					</p>
+				</div>
+			</form>
+		</div>
+	</mai>
+<!--	/main-->
+	
+<!--	footer-->
+	<footer></footer>
+<!--	/footer-->
+
+<!-- <script src="//code.jquery.com/jquery-3.2.1.js"></script> -->
+<script src="js/script.js?ver=1.1"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*--------------------
+ * Theme Name: テーマ名
+ * Author: gmain
+ * Description: ※テーマ、用途
+ * Version: 1.0
+ * Licence: Copyright (c) 2019 gamin
+ *--------------------*/
+
+/*--------------------
+ * common
+ *--------------------*/
+$main-color: #1d1d1d;
+$main-bgc: #eee;
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Montserrat', 'Noto Sans CS', sans-serif;
+	color: $main-color;
+	font-size: 1.6rem;
+	font-weight: 300;
+	background-color: $main-bgc;
+	letter-spacing: 0.05em;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+button {
+	overflow : hidden;
+	outline : none;
+}
+.text-center {
+	text-align: center;
+}
+.wrapper {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.btn {
+	display: block;
+	border: 1px solid $main-color;
+	border-radius: 2px;
+	padding:  8px 16px;
+	font-size: 1.4rem;
+	color: $main-bgc;
+	background-color: $main-color;
+	transition: all 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $main-bgc;
+		color: $main-color;
+	}
+}
+
+/*--------------------
+ * header
+ *--------------------*/
+.gm-header {
+	margin-bottom: 100px;
+}
+
+.gm-header-title {
+	//定数
+	$elSize: 64px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-bottom: $elSize;
+	width: $elSize;
+	height: $elSize;
+	color: $main-bgc;
+	background-color: $main-color;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: ($elSize/2) solid $main-color;
+		border-right: ($elSize/2) solid transparent;
+		border-bottom: ($elSize/2) solid transparent;
+		border-left: ($elSize/2) solid $main-color;
+		z-index: -1;
+	}
+	&::before {
+		left: 100%;
+	}
+	&::after {
+		top: 100%;
+		left:0;
+	}
+	
+	//element
+	&__title {
+		font-size: 32px;
+		transform: rotate(-45deg);
+		line-height: 100px;
+	}
+}
+
+.gm-header-subtitle {
+	padding-top: 32px;
+	padding-right: 32px;
+	padding-left: 100px;
+	font-size: 1.8rem;
+	text-align: right;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	font-weight: 300;
+}
+
+.mes {
+	margin-bottom: 64px;
+	font-weight: 300;
+}
+.btn-box {
+	margin-top: 32px;
+	display: flex;
+}
+.output {
+	margin-left: 16px
+}
+
+.t-right p {
+	margin-left: 16px;
+	font-weight: 300;
+}
+.text-box {
+	& input[type='text'] {
+		box-sizing: border-box;
+		width: 144px;
+		padding: 0.3em;
+		transition: 0.3s;
+		letter-spacing: 1px;
+		color: #aaaaaa;
+		border: none;
+		border-bottom: 1px solid $main-color;
+		background: transparent;
+		outline: 0;
+		border-radius: 0;
+		font-size: 1.7rem;
+	}
+}
+/*--------------------
+ * pc
+ *--------------------*/
+@media screen and (min-width:641px) {
+	.br-sp {
+		display: none;
+	}
+}
