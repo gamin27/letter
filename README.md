@@ -4,4 +4,3 @@
 
 # 2.学び
 生jsによるHTML生成（textareaの生成）
-
